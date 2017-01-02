@@ -65,10 +65,11 @@ nav > ul {
 	padding-bottom: .5rem;
 }
 
-nav li {
+nav li a {
 	font-size: .75rem;
 	padding: 0 .75rem;
-	border-right: 1px solid #777;
+	text-transform: lowercase;
+	font-style: italic;
 	opacity: .8;
 }
 
@@ -86,17 +87,44 @@ nav li:last-of-type {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 1rem 0;
+	margin: 3rem 0;
 }
 
 .tile {
 	width: 80%;
-	height: 20rem;
-	margin-bottom: 1rem;
+	margin-bottom: 5rem;
 }
 
 .tile:last-of-type {
 	border: none;
+}
+
+h2,
+h3,
+h4 {
+	text-align: center;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: sans-serif;
+	letter-spacing: .25rem;
+}
+
+h4 {
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.tile img {
+	opacity: .7;
+	width: 75%;
+	align-self: center;
+	padding: 1rem;
+}
+
+.tile img:hover {
+	opacity: 1;
 }
 
 .tile a {
@@ -123,22 +151,6 @@ nav li:last-of-type {
 	text-align: center;
 }
 
-#art {
-	background-image: url('assets/artwork/seated_01.jpg');
-	background-size: 110%;
-	background-position: center 3%; 
-}
-
-#web {
-	background-image: url('assets/web/image4.PNG');
-	background-size: 100%;
-}
-
-#design {
-	background-image: url('assets/design/crouch_flyer.jpg');
-	background-size: 100%;
-}
-
 @media (min-width: 800px) {
 	.tiles {
 		flex-direction: row;
@@ -150,12 +162,10 @@ nav li:last-of-type {
 		padding: 2rem;
 	}
 
-	#art,
-	#web,
-	#design {
-		background-size: cover;
-		background-position: center top;
+	.hide-show {
+		display: none;
 	}
+
 }
 
 
