@@ -10,3 +10,17 @@
 .contact {
 	margin: 2rem 1rem 1rem 1rem;
 }
+
+button {
+	background-color: #fff;
+	border: 1px solid black;
+	font-size: 1rem;
+	padding: .75rem;
+	text-transform: uppercase;
+	width: 10rem;
+}
+
+button:hover {
+	background-color: #000;
+	color: #fff;
+}
