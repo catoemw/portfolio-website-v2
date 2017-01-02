@@ -1,0 +1,86 @@
+.study h1 {
+	font-weight: normal;
+	margin-bottom: .15rem;
+}
+
+.study a {
+	text-transform: lowercase;
+	text-decoration: underline;
+}
+
+.study p:first-of-type {
+	font-family: sans-serif;
+	font-style: italic;
+	text-align: left;
+	font-size: .75rem;
+	margin-top: 0;
+}
+
+.study p {
+	line-height: 1.4rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.study {
+	margin: 1rem;
+}
+
+.web {
+	display: none;
+}
+
+.web:last-of-type {
+	display: block;
+}
+
+.images {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.images > img {
+	margin: 1rem 0;
+	border: 1px solid black;
+	width: 100%;
+}
+
+@media (min-width: 700px) {
+	.mobile {
+		display: none;
+	}
+
+	.web {
+		display: block;
+	}
+
+	.study p {
+		text-align: left;
+	}
+
+	.images {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.images img {
+		/*flex-basis: 35%;*/
+		height: 20rem;
+		/*padding: 1rem;*/
+		width: initial;
+	}
+
+	.study {
+		width: 75vw;
+		margin: auto;
+	}
+
+}
+
+
+
+
+
+

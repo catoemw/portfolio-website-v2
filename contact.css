@@ -1,0 +1,12 @@
+.contact li {
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	text-align: center;
+	letter-spacing: .25rem;
+	text-decoration: underline;
+}
+
+.contact {
+	margin: 2rem 1rem 1rem 1rem;
+}
