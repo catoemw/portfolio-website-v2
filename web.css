@@ -5,7 +5,7 @@
 }
 
 .study a {
-	text-transform: lowercase;
+	text-transform: capitalize;
 	text-decoration: underline;
 }
 
