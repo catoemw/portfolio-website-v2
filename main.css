@@ -75,11 +75,10 @@ nav > ul {
 	padding-bottom: .5rem;
 }
 
-nav li a {
+nav li {
 	font-size: .75rem;
 	padding: 0 .75rem;
-	text-transform: lowercase;
-	font-style: italic;
+	border-right: 1px solid #777;
 	opacity: .8;
 }
 
@@ -102,6 +101,7 @@ nav li:last-of-type {
 
 .tile {
 	width: 80%;
+	height: 20rem;
 	margin-bottom: 5rem;
 }
 
@@ -126,7 +126,7 @@ h4 {
 	font-style: italic;
 }
 
-.tile img {
+/*.tile img {
 	opacity: .7;
 	width: 75%;
 	align-self: center;
@@ -135,7 +135,7 @@ h4 {
 
 .tile img:hover {
 	opacity: 1;
-}
+}*/
 
 .tile a {
 	height: 100%;
@@ -161,6 +161,22 @@ h4 {
 	text-align: center;
 }
 
+#art {
+	background-image: url('assets/artwork/seated_01.jpg');
+	background-size: 110%;
+	background-position: center 3%; 
+}
+
+#web {
+	background-image: url('assets/web/image4.PNG');
+	background-size: 100%;
+}
+
+#design {
+	background-image: url('assets/design/crouch_flyer.jpg');
+	background-size: 100%;
+}
+
 @media (min-width: 800px) {
 	.tiles {
 		flex-direction: row;
@@ -174,6 +190,13 @@ h4 {
 
 	.hide-show {
 		display: none;
+	}
+
+	#art,
+	#web,
+	#design {
+		background-size: cover;
+		background-position: center top;
 	}
 
 }
